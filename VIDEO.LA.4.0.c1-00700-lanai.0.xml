@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://git.codelinaro.org/clo/la" name="clo-la"/>
+  <default remote="clo-la" revision="dummy_revision" sync-c="true" sync-tags="false"/>
+  <project remote="clo-la" name="platform/vendor/opensource/mmrm-driver" path="vendor/qcom/opensource/mmrm-driver" revision="3c78d8844f04fc55d0cd55ac952df448c45402ce" upstream="refs/heads/mmrm-kernel.lnx.4.0.c1" groups="cyborg">
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/mmrm_kernel_board.mk" src="mmrm_kernel_board.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/mmrm_kernel_product.mk" src="mmrm_kernel_product.mk"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/opensource/video-driver" path="vendor/qcom/opensource/video-driver" revision="306c365b33291a1e15bbbadf6bf312fede45cd25" upstream="refs/heads/video-kernel.lnx.4.0.c1" groups="cyborg">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/video_kernel_product.mk" src="video_kernel_product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/video_kernel_board.mk" src="video_kernel_board.mk"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/opensource/video-driver-test" path="vendor/qcom/opensource/video-driver/test" revision="66256693d2930b5846686fa1894fd42e8b7b8d5a" upstream="refs/heads/video-kernel.lnx.4.0.c1" groups="cyborg"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/wfd-commonsys" path="vendor/qcom/opensource/wfd" revision="e79944ac4f9e8472bfadf411da514b4010350185" upstream="refs/heads/wfd-userspace.lnx.8.4.0.c1"/>
+  <project remote="clo-la" name="platform/vendor/qcom/opensource/video-qapi" path="vendor/qcom/opensource/video-qapi" revision="4acca4ec7ca1dbdf43d58e6381f3785cda113b09" upstream="refs/heads/video-userspace.lnx.codec2.4.0.c1"/>
+</manifest>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="clo" fetch="https://git.codelinaro.org/clo/la" review="codelinaro.org"/>
+  <default remote="clo" revision="VIDEO.XR.3.0" sync-j="8"/>
+  <project name="platform/vendor/opensource/mmrm-driver" path="vendor/qcom/opensource/mmrm-driver" revision="c5d6ea53941d698022c893d62828f3e358e43a74" upstream="refs/heads/mmrm-kernel.lnx.1.0.r3-rel" groups="cyborg">
+    <linkfile src="mmrm_kernel_board.mk" dest="vendor/qcom/defs/board-defs/vendor/mmrm_kernel_board.mk"/>
+    <linkfile src="mmrm_kernel_product.mk" dest="vendor/qcom/defs/product-defs/vendor/mmrm_kernel_product.mk"/>
+  </project>
+  <project name="platform/vendor/opensource/mmrm-driver-test" path="vendor/qcom/opensource/mmrm-driver/test" revision="65a4cddc817269dfc4e835a3d355dc423d3bc51c" upstream="refs/heads/mmrm-kernel.lnx.1.0.r3-rel" groups="cyborg"/>
+  <project name="platform/vendor/opensource/video-driver" path="vendor/qcom/opensource/video-driver" revision="9a829d5790c9a2c3285e12676be2a9ca4c3b2f58" upstream="refs/heads/video-kernel.lnx.1.0.r3-rel" groups="cyborg">
+    <linkfile src="video_kernel_product.mk" dest="vendor/qcom/defs/product-defs/vendor/video_kernel_product.mk"/>
+    <linkfile src="video_kernel_board.mk" dest="vendor/qcom/defs/board-defs/vendor/video_kernel_board.mk"/>
+  </project>
+  <project name="platform/vendor/opensource/video-driver-test" path="vendor/qcom/opensource/video-driver/test" revision="66256693d2930b5846686fa1894fd42e8b7b8d5a" upstream="refs/heads/video-kernel.lnx.1.0.r3-rel" groups="cyborg"/>
+  <project name="platform/vendor/qcom-opensource/wfd-commonsys" path="vendor/qcom/opensource/wfd" revision="7160c84aa763e95adcc4ba7cc3bb67ec76e73032" upstream="refs/heads/wfd-userspace.lnx.7.0.r5-rel"/>
+</manifest>

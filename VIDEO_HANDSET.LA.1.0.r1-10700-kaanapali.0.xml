@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote fetch="https://git.codelinaro.org/clo/la" name="clo-la"/>
+  <default remote="clo-la" revision="dummy_revision" sync-c="true" sync-tags="false"/>
+  <project remote="clo-la" name="platform/vendor/opensource/mmrm-devicetree" path="vendor/qcom/opensource/mmrm-devicetree" revision="5f51a524349e3fa262c982c9bee9462586f43def" upstream="refs/heads/mmrm-kernel-handset.lnx.1.0.r2-rel"/>
+  <project remote="clo-la" name="platform/vendor/opensource/mmrm-driver" path="vendor/qcom/opensource/mmrm-driver" revision="d6bf7932e213eafb61272802c57ededf19ec55e1" upstream="refs/heads/mmrm-kernel-handset.lnx.1.0.r2-rel" groups="cyborg">
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/mmrm_kernel_board.mk" src="mmrm_kernel_board.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/mmrm_kernel_product.mk" src="mmrm_kernel_product.mk"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/opensource/mmrm-driver-test" path="vendor/qcom/opensource/mmrm-driver-test" revision="0ebd75d8930a8ec50fdf97479dbb1ad6ec1da6b8" upstream="refs/heads/mmrm-kernel-handset.lnx.1.0.r2-rel" groups="cyborg"/>
+  <project remote="clo-la" name="platform/vendor/opensource/video-devicetree" path="vendor/qcom/opensource/video-devicetree" revision="b01ec0bc502d0c38a22b1c0ba6bb3e5fdb8c4718" upstream="refs/heads/video-kernel-handset.lnx.1.0.r2-rel"/>
+  <project remote="clo-la" name="platform/vendor/opensource/video-driver" path="vendor/qcom/opensource/video-driver" revision="10bdf7c74e606abb9977064de491e6458a7be001" upstream="refs/heads/video-kernel-handset.lnx.1.0.r2-rel" groups="cyborg">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/video_kernel_product.mk" src="video_kernel_product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/video_kernel_board.mk" src="video_kernel_board.mk"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/opensource/video-driver-test" path="vendor/qcom/opensource/video-driver/test" revision="66256693d2930b5846686fa1894fd42e8b7b8d5a" upstream="refs/heads/video-kernel-handset.lnx.1.0.r2-rel" groups="cyborg"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/wfd-commonsys" path="vendor/qcom/opensource/wfd" revision="d45b193f9e806d28723c56dfa7e6ac31d356c4ac" upstream="refs/heads/wfd-userspace-handset.lnx.1.0.r2-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom/opensource/video-qapi" path="vendor/qcom/opensource/video-qapi" revision="bf14f44bf5a006e5b334e4cec5c441bf439b4de4" upstream="refs/heads/video-userspace-codec2-handset.lnx.1.0.r3-rel"/>
+</manifest>

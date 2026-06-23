@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote fetch="https://git.codelinaro.org/clo/la" name="clo-la"/>
+  <default remote="clo-la" revision="dummy_revision" sync-c="true" sync-tags="false"/>
+  <project remote="clo-la" name="platform/vendor/opensource/mmrm-driver" path="vendor/qcom/opensource/mmrm-driver" revision="fd49de3bb1d0841b97c317d882a04543e5084ba8" upstream="refs/heads/mmrm-kernel-waipio.lnx.1.8.r3-rel" groups="cyborg">
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/mmrm_kernel_board.mk" src="mmrm_kernel_board.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/mmrm_kernel_product.mk" src="mmrm_kernel_product.mk"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/opensource/mmrm-driver-test" path="vendor/qcom/opensource/mmrm-driver/test" revision="b53832880c35e12da195e80784ed72880121bb4e" upstream="refs/heads/mmrm-kernel-waipio.lnx.1.8.r3-rel" groups="cyborg"/>
+  <project remote="clo-la" name="platform/vendor/opensource/video-devicetree" path="vendor/qcom/opensource/video-devicetree" revision="ef216896eb5367c4fcc013ae5e0927362ec6e7b9" upstream="refs/heads/video-kernel-waipio.lnx.1.7.r3-rel"/>
+  <project remote="clo-la" name="platform/vendor/opensource/video-driver" path="vendor/qcom/opensource/video-driver" revision="077bdf23920cd28610ad786d05f50cef1ebb6fca" upstream="refs/heads/video-kernel-waipio.lnx.1.7.r3-rel" groups="cyborg">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/video_kernel_product.mk" src="video_kernel_product.mk"/>
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/video_kernel_board.mk" src="video_kernel_board.mk"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/opensource/video-driver-test" path="vendor/qcom/opensource/video-driver/test" revision="66256693d2930b5846686fa1894fd42e8b7b8d5a" upstream="refs/heads/video-kernel-waipio.lnx.1.7.r3-rel" groups="cyborg"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/wfd-commonsys" path="vendor/qcom/opensource/wfd" revision="73b76e39fc2cf73aaacdc5ae21da415dd1a45224" upstream="refs/heads/wfd-userspace.lnx.6.6.r3-rel"/>
+</manifest>
